@@ -47,7 +47,7 @@ var saved_script_objects={
 		"ignore_object_name": true,
 		"object_library": "DomDynamicsAX",
 		"window_name": "All customers -- Finance and Operations",
-		"xpath": "//div[contains(@id,'dirpartyquickCreateForm') and contains(@id,'DynamicHeader_AccountNum') and @data-dyn-role='Input' and @data-dyn-controlname='DynamicHeader_AccountNum']",
+		"xpath": "//div[contains(@id,'DirPartyQuickCreateForm') and contains(@id,'DynamicHeader_AccountNum') and @data-dyn-role='Input' and @data-dyn-controlname='DynamicHeader_AccountNum']",
 		"title": "All customers -- Finance and Operations",
 		"url": ""
 	},
@@ -73,7 +73,7 @@ var saved_script_objects={
 		"ignore_object_name": true,
 		"object_library": "DomDynamicsAX",
 		"window_name": "All customers -- Finance and Operations",
-		"xpath": "//div[contains(@id,'dirpartyquickCreateForm') and contains(@id,'Org_Name') and @data-dyn-role='Input' and @data-dyn-controlname='Org_Name']",
+		"xpath": "//div[contains(@id,'DirPartyQuickCreateForm') and contains(@id,'Org_Name') and @data-dyn-role='Input' and @data-dyn-controlname='Org_Name']",
 		"title": "All customers -- Finance and Operations",
 		"url": ""
 	},
@@ -125,7 +125,7 @@ var saved_script_objects={
 		"ignore_object_name": true,
 		"object_library": "DomDynamicsAX",
 		"window_name": "All customers -- Finance and Operations",
-		"xpath": "//div[contains(@id,'dirpartyquickCreateForm') and contains(@id,'DynamicDetail_CustGroup') and @data-dyn-role='Input' and @data-dyn-controlname='DynamicDetail_CustGroup']",
+		"xpath": "//div[contains(@id,'DirPartyQuickCreateForm') and contains(@id,'DynamicDetail_CustGroup') and @data-dyn-role='Input' and @data-dyn-controlname='DynamicDetail_CustGroup']",
 		"title": "All customers -- Finance and Operations",
 		"url": ""
 	},
@@ -151,7 +151,7 @@ var saved_script_objects={
 		"ignore_object_name": true,
 		"object_library": "Chrome HTML",
 		"window_name": "All customers -- Finance and Operations",
-		"xpath": "//button[@type='button' and @name='OKButton' and contains(@id,'dirpartyquickCreateForm') and contains(@id,'OKButton') and @data-dyn-role='CommandButton' and @data-dyn-controlname='OKButton']",
+		"xpath": "//button[@type='button' and @name='OKButton' and contains(@id,'DirPartyQuickCreateForm') and contains(@id,'OKButton') and @data-dyn-role='CommandButton' and @data-dyn-controlname='OKButton']",
 		"title": "All customers -- Finance and Operations",
 		"url": ""
 	},
@@ -204,6 +204,58 @@ var saved_script_objects={
 		"object_library": "Chrome HTML",
 		"window_name": "All customers -- Finance and Operations",
 		"xpath": "//button[@type='button' and @name='Yes' and contains(@id,'SysBoxForm') and contains(@id,'Yes') and @data-dyn-role='CommandButton' and @data-dyn-controlname='Yes']",
+		"title": "All customers -- Finance and Operations",
+		"url": ""
+	},
+	"Org_NameAlias": {
+		"locations": [
+			{
+				"locator_name": "HTML",
+				"location": {
+					"xpath": "param:xpath",
+					"url": "param:url",
+					"title": "param:title"
+				}
+			}
+		],
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXTextBox",
+		"object_flavor": "Edit",
+		"object_name": "Org_NameAlias",
+		"ignore_object_name": true,
+		"object_library": "DomDynamicsAX",
+		"window_name": "All customers -- Finance and Operations",
+		"xpath": "//input[@role='textbox' and @type='text' and @name='Org_NameAlias' and contains(@id,'custtablelistpage') and contains(@id,'Org_NameAlias_input')]",
+		"title": "All customers -- Finance and Operations",
+		"url": "https://trial-6y3kkw.sandbox.operations.dynamics.com/?cmp=DAT&mi=CustTableListPage"
+	},
+	"Customers_Grid": {
+		"locations": [
+			{
+				"locator_name": "HTML",
+				"location": {
+					"xpath": "param:xpath",
+					"url": "param:url",
+					"title": "param:title"
+				}
+			}
+		],
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "Customers_Grid",
+		"ignore_object_name": true,
+		"object_library": "DomDynamicsAX",
+		"window_name": "All customers -- Finance and Operations",
+		"xpath": "//div[contains(@id,'custtablelistpage') and contains(@id,'Grid') and @role='grid']",
 		"title": "All customers -- Finance and Operations",
 		"url": ""
 	}

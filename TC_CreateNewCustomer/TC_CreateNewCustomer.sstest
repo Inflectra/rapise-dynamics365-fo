@@ -55,6 +55,9 @@
         <Path>Objects.js</Path>
       </TestFile>
       <TestFile>
+        <Path>..\Output.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>..\User.js</Path>
       </TestFile>
     </TestFiles>
