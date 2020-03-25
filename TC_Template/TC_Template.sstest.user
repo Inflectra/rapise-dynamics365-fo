@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserSettings>
+  <ArrayOfFlexDictionaryEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FlexDictionaryEntry name="TestTree" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\Work\Inflectra\InflectraGitProjects\rapise-demo\Dynamics365FO\D365FOFramework\TC_CreateNewCustomer\TC_CreateNewCustomer.sstest.Test" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\Work\Inflectra\InflectraGitProjects\rapise-demo\Dynamics365FO\D365FOFramework\TC_CreateNewCustomer\TC_CreateNewCustomer.sstest.Test.Reports" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\Work\Inflectra\InflectraGitProjects\rapise-demo\Dynamics365FO\D365FOFramework\TC_Template\TC_Template.sstest.Test" type="System.Boolean">
+            <boolean>true</boolean>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="C:\Work\Inflectra\InflectraGitProjects\rapise-demo\Dynamics365FO\D365FOFramework\TC_Template\TC_Template.sstest.Test.Reports" type="System.Boolean">
+            <boolean>false</boolean>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="DebugWatches" type="SmarteStudio.Test.StringList">
+      <ArrayOfString>
+        <string>cellPath</string>
+        <string>self.xpath</string>
+      </ArrayOfString>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="OpenDocuments" type="SmarteStudio.Test.StringList">
+      <ArrayOfString>
+        <string>C:\Work\Inflectra\InflectraGitProjects\rapise-demo\Dynamics365FO\D365FOFramework\TC_Template\Main.rvl.xlsx</string>
+      </ArrayOfString>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Status" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="Status" type="System.String">
+            <string>Fail</string>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Pass" type="System.Int32">
+            <int>21</int>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Fail" type="System.Int32">
+            <int>0</int>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Unresolved" type="System.Int32">
+            <int>3</int>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Todo" type="System.Int32">
+            <int>0</int>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Debugger" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="DebugMode" type="System.String">
+            <string>NoDebugger</string>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="Verbose" type="System.Int32">
+            <int>1</int>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+    <FlexDictionaryEntry name="Files" type="SmarteStudio.Test.FlexDictionary">
+      <FlexDictionary>
+        <ArrayOfFlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\d365foframework\tc_createnewcustomer\main.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\d365foframework\tc_createnewcustomer\main.rvl.xlsx" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Row" type="System.Int32">
+                  <int>13</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Col" type="System.Int32">
+                  <int>6</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\d365foframework\user.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\rapise\rapise\core\engine\lib\libdomdynamicsax\domdynamicsaxmenubar.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>1</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>82</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\createnewcustomer\main.rvl.xlsx" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Row" type="System.Int32">
+                  <int>1</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Col" type="System.Int32">
+                  <int>1</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\d365foframework\tc_createnewcustomer\objects.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>100</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>153</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\rapise\rapise\core\engine\lib\libdomdynamicsax\domdynamicsaxcombobox.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo />
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>4</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>8</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\rapise\rapise\core\engine\lib\libdomdynamicsax\domdynamicsaxgrid.js" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Folding" type="SmarteStudio.Editor.FoldingStrategy.JsFoldingStrategy">
+                  <JsFoldingStrategy>
+                    <IsJson>false</IsJson>
+                    <FoldingMarkers />
+                  </JsFoldingStrategy>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Breakpoints" type="System.Collections.Generic.List`1[[SmarteStudio.Debugger.BreakPointInfo, SeSIDE.Debugger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]">
+                  <ArrayOfBreakPointInfo>
+                    <BreakPointInfo>
+                      <line>172</line>
+                      <offset>3882</offset>
+                      <length>37</length>
+                    </BreakPointInfo>
+                    <BreakPointInfo>
+                      <line>202</line>
+                      <offset>4733</offset>
+                      <length>45</length>
+                    </BreakPointInfo>
+                  </ArrayOfBreakPointInfo>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretX" type="System.Int32">
+                  <int>2</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="CaretY" type="System.Int32">
+                  <int>165</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+          <FlexDictionaryEntry name="c:\work\inflectra\inflectragitprojects\rapise-demo\dynamics365fo\d365foframework\tc_template\main.rvl.xlsx" type="SmarteStudio.Test.FlexDictionary">
+            <FlexDictionary>
+              <ArrayOfFlexDictionaryEntry>
+                <FlexDictionaryEntry name="Row" type="System.Int32">
+                  <int>32</int>
+                </FlexDictionaryEntry>
+                <FlexDictionaryEntry name="Col" type="System.Int32">
+                  <int>0</int>
+                </FlexDictionaryEntry>
+              </ArrayOfFlexDictionaryEntry>
+            </FlexDictionary>
+          </FlexDictionaryEntry>
+        </ArrayOfFlexDictionaryEntry>
+      </FlexDictionary>
+    </FlexDictionaryEntry>
+  </ArrayOfFlexDictionaryEntry>
+</UserSettings>
