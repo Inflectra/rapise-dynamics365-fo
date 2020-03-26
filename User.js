@@ -1,5 +1,6 @@
 //Put your custom functions and variables in this file
 
+g_recordUrls = false;
 g_browserLibrary = "Chrome";
 
 if (!g_recording)
@@ -142,6 +143,25 @@ function DfoSetFieldText(/**string*/ field, /**string*/ text)
 	obj.DoSendKeys("{TAB}");
 }
 
+/**
+ * Expands combobox.
+ * @param field Name of a combobox.
+ */
+function DfoExpandCombobox(/**string*/ field)
+{
+	var xpath = "//label[contains(@id,'Form') and text()='" + field + "']/..//div[contains(@class,'lookupButton')]";
+	var obj = DfoFindObject(xpath);
+	
+	if (!obj)
+	{
+		LogAssert("DfoExpandCombobox: field not found: " + field);
+		return;
+	}
+	
+	obj.object_name = field;
+	obj.DoClick();
+}
+
 /** 
  * Clicks button on a form.
  * @param button Name of a button.
@@ -160,6 +180,56 @@ function DfoClickFormButton(/**string*/ button)
 	obj.object_name = button;
 	obj.DoClick();
 } 
+
+/**
+ * Searches for records.
+ * @param value Value to search for.
+ */
+function DfoSearchRecords(/**string*/ value)
+{
+	var input = DfoFindObject("//input[@name='QuickFilterControl_Input']");
+	var button = DfoFindObject("//button[@title='Apply filter']");
+	
+	if (!input)
+	{
+		LogAssert("DfoSearchRecords: input field not found");
+		return;
+	}
+	
+	if (!button)
+	{
+		LogAssert("DfoSearchRecords: button field not found");
+		return;
+	}
+	
+	
+	input.object_name = "SearchField";
+	button.object_name = "SearchButton";
+	
+	input.DoClick();
+	input.DoSetText(value);
+	button.DoClick();
+}
+
+/**
+ * Writes key/value pair to Output.xlsx
+ * @param key
+ * @param value
+ */
+function SetOutputValue(/**string*/ key, /**string*/ value)
+{
+	Global.SetProperty(key, value, "%WORKDIR%\\Output.xlsx");
+}
+
+/**
+ * Reads value from Output.xlsx
+ * @param key
+ * @param [defValue]
+ */
+function GetOutputValue(/**string*/ key, /**string*/ defValue)
+{
+	return Global.GetProperty(key, defValue, "%WORKDIR%\\Output.xlsx");
+}
 
 /**
  * Navigates to the specified URL and performs login at https://login.microsoftonline.com/

@@ -53,6 +53,10 @@ Example:
 
 Clicks toolbar button. E.g. New, Edit, Delete.
 
+### DfoExpandCombobox
+
+Expands a combobox on a form.
+
 ### DfoSetFieldText
 
 Enters text into a field. Specify field name and text value.
