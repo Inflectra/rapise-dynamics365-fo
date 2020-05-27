@@ -1,0 +1,62 @@
+{
+	record:
+	{
+		attributes: [
+			{ name: "href",	exclude: "javascript:" },
+			{ name: "role" },
+			{ name: "type" },
+			{ name: "name" },
+			{ name: "id"},
+			{ name: "data-dyn-role"},
+			{ name: "data-dyn-controlname"}
+		],
+		classes: [
+			/* { name: "content" } */
+		],
+		anchors: [
+			/* { xpath: "//div[@class='content-wrapper']" } */
+		],
+		clickable: {
+			classes: [
+				"lookupButton",
+				"titleField"
+			]
+		},
+		handlers:
+		{
+			elementName: function(el)
+			{
+				var controlName = __getAttribute(el, "data-dyn-controlname");
+				if (controlName)
+				{
+					return controlName;
+				}
+				
+				var tag = el.tagName.toLowerCase();
+				if (tag == "input")
+				{
+					var name = __getAttribute(el, "name");
+					if (name)
+					{
+						var parts = name.split("_");
+						return parts[parts.length - 1];
+					}
+				}
+
+				return null;
+			},
+			skipAttribute: function (node, attr, value)
+			{
+				if (attr == "role")
+				{
+					if (value == "presentation")
+					{
+						return true;
+					}
+				}
+
+				return false;
+			}
+		}
+	}
+}

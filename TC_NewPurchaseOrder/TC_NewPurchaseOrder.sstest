@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" v="18" t="">
   <ScriptPath>Main.js</ScriptPath>
-  <UserFunctionsPath>User.js</UserFunctionsPath>
+  <UserFunctionsPath>..\User.js</UserFunctionsPath>
   <ObjectsPath>Objects.js</ObjectsPath>
-  <ReportPath>D365FOFramework.trp</ReportPath>
-  <CommandInterval>1000</CommandInterval>
+  <ReportPath>TC_NewPurchaseOrder.trp</ReportPath>
+  <CommandInterval>500</CommandInterval>
   <IterationsCount>1</IterationsCount>
   <StopOnError>true</StopOnError>
   <CacheObjects>false</CacheObjects>
-  <ObjectLookupAttempts>30</ObjectLookupAttempts>
-  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
+  <ObjectLookupAttempts>60</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>500</ObjectLookupAttemptInterval>
   <ShowReport>true</ShowReport>
   <BeautifySavedObjects>true</BeautifySavedObjects>
   <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
@@ -19,7 +19,7 @@
   <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
   <CommandLine />
   <EntryPoint>Test</EntryPoint>
-  <WorkDir>.</WorkDir>
+  <WorkDir>..\.</WorkDir>
   <TestFiles>
     <Name>Test</Name>
     <IsFilterGroup>false</IsFilterGroup>
@@ -37,13 +37,13 @@
     </Groups>
     <TestFiles>
       <TestFile>
-        <Path>Config.xlsx</Path>
+        <Path>..\Config.xlsx</Path>
       </TestFile>
       <TestFile>
-        <Path>Data.xlsx</Path>
+        <Path>..\Data.xlsx</Path>
       </TestFile>
       <TestFile>
-        <Path>Dropdowns.xlsx</Path>
+        <Path>..\Dropdowns.xlsx</Path>
       </TestFile>
       <TestFile>
         <Path>Main.js</Path>
@@ -55,19 +55,13 @@
         <Path>Objects.js</Path>
       </TestFile>
       <TestFile>
-        <Path>TC_CreateNewCustomer\TC_CreateNewCustomer.sstest</Path>
+        <Path>..\Output.xlsx</Path>
       </TestFile>
       <TestFile>
-        <Path>TC_NewPurchaseOrder\TC_NewPurchaseOrder.sstest</Path>
+        <Path>..\User.js</Path>
       </TestFile>
       <TestFile>
-        <Path>TC_Template\TC_Template.sstest</Path>
-      </TestFile>
-      <TestFile>
-        <Path>User.js</Path>
-      </TestFile>
-      <TestFile>
-        <Path>WebAppProfile.json</Path>
+        <Path>..\WebAppProfile.json</Path>
       </TestFile>
     </TestFiles>
   </TestFiles>
@@ -79,7 +73,7 @@
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\TC_NewPurchaseOrder\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
     <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="False" description="Enable web plugins auto detection" output="false" ask="false">
