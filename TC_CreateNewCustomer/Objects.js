@@ -231,7 +231,7 @@ var saved_script_objects={
 		"window_name": "All customers -- Finance and Operations",
 		"xpath": "//input[@role='textbox' and @type='text' and @name='Org_NameAlias' and contains(@id,'custtablelistpage') and contains(@id,'Org_NameAlias_input')]",
 		"title": "All customers -- Finance and Operations",
-		"url": "https://trial-6y3kkw.sandbox.operations.dynamics.com/?cmp=DAT&mi=CustTableListPage"
+		"url": ""
 	},
 	"Customers_Grid": {
 		"locations": [

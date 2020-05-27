@@ -1,0 +1,8 @@
+*.user
+*.trp
+Reports
+*.log
+*.tap
+Repository.json
+record.cmd
+play.cmd
