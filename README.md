@@ -33,6 +33,10 @@ Launches Dynamics 365 for Finance and Operations in a browser. Dynamics365FOUrl,
 
 Passes through welcome messages: Dive in...
 
+### DfoSelectCompany
+
+Clicks on the current company in the top right corner of the main page, then expands the dropdown with the list of available companies and selects the required one. 
+
 ### DfoSearchPage
 
 Searches for a page. Use to perform initial navigation.
