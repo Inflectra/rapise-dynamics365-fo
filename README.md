@@ -64,3 +64,11 @@ Enters text into a field. Specify field name and text value.
 ### DfoClickFormButton
 
 Clicks button on a form.
+
+### SetOutputValue
+
+Writes key/value pair to Output.xlsx
+
+### GetOutputValue
+
+Reads value from Output.xlsx
