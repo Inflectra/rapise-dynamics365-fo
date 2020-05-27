@@ -1,6 +1,8 @@
 //Put your custom functions and variables in this file
 
 g_recordUrls = false;
+g_objectNameMaxLength = 64;
+
 g_browserLibrary = "Chrome";
 
 if (!g_recording)
@@ -63,6 +65,16 @@ function DfoPassWelcomeScreen()
 			obj.DoClick();
 		}
 	}
+}
+
+function DfoSelectCompany(/**string*/ company)
+{
+    Navigator.DoClickUntilOnScreen('G_CompanyButton', 'G_CompanyChooser', 10, 1000);
+    SeS('G_CompanyChooser').DoOpen();
+    SeS('G_CompanyLookup').DoClickCell(company, 1);
+	Global.DoSleep(5000);
+	DfoWait();
+	
 }
 
 /**
