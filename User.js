@@ -50,7 +50,7 @@ function DfoLaunch()
  */
 function DfoPassWelcomeScreen()
 {
-	var xpath = "//button[@data-dyn-role='Button' and @data-dyn-controlname='10']";
+	var xpath = "//span[.='Dive in!']";
 	// Dive In!
 	var obj = DfoFindObject(xpath);
 	if (obj)
@@ -58,6 +58,7 @@ function DfoPassWelcomeScreen()
 		obj.object_name = "DiveIn";
 		obj.DoClick();
 		// Let's get started
+		xpath = "//span[contains(.,'get started!')]";
 		obj = DfoFindObject(xpath);
 		if (obj)
 		{
