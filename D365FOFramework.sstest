@@ -11,6 +11,7 @@
   <ObjectLookupAttempts>30</ObjectLookupAttempts>
   <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
   <ShowReport>true</ShowReport>
+  <JSEngineType>Default</JSEngineType>
   <BeautifySavedObjects>true</BeautifySavedObjects>
   <SaveRecordingScreenshots>false</SaveRecordingScreenshots>
   <SavePlaybackScreenshots>false</SavePlaybackScreenshots>
@@ -26,6 +27,31 @@
     <FilterWildcard>*.*</FilterWildcard>
     <FilterPath />
     <Groups>
+      <TestGroup>
+        <Name>Lib</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath>Lib</FilterPath>
+        <Groups>
+          <TestGroup>
+            <Name>LibDynamics365FO</Name>
+            <IsFilterGroup>false</IsFilterGroup>
+            <FilterWildcard>*.*</FilterWildcard>
+            <FilterPath>LibDynamics365FO</FilterPath>
+            <Groups />
+            <TestFiles>
+              <TestFile>
+                <Path>Lib\LibDynamics365FO\LibDynamics365FO.js</Path>
+              </TestFile>
+            </TestFiles>
+          </TestGroup>
+        </Groups>
+        <TestFiles>
+          <TestFile>
+            <Path>Lib\LibDynamics365FO.jslib</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
       <TestGroup>
         <Name>Reports</Name>
         <IsFilterGroup>true</IsFilterGroup>
@@ -55,7 +81,13 @@
         <Path>Objects.js</Path>
       </TestFile>
       <TestFile>
+        <Path>TC_CreateCustomerGroup\TC_CreateCustomerGroup.sstest</Path>
+      </TestFile>
+      <TestFile>
         <Path>TC_CreateNewCustomer\TC_CreateNewCustomer.sstest</Path>
+      </TestFile>
+      <TestFile>
+        <Path>TC_ErpWakeUp\TC_ErpWakeUp.sstest</Path>
       </TestFile>
       <TestFile>
         <Path>TC_NewPurchaseOrder\TC_NewPurchaseOrder.sstest</Path>

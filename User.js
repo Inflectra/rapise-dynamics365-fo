@@ -5,13 +5,42 @@ g_objectNameMaxLength = 64;
 
 g_browserLibrary = "Chrome";
 
-if (!g_recording)
+function TestInit()
 {
-	TestInit = function()
+	if (g_entryPointName == "Test")
 	{
-		Global.DoLoadObjects('%WORKDIR%/Objects.js');
-		Navigator.EnsureVisibleVerticalAlignment = "center";
+		KillAllBrowsers();
 	}
+
+	Global.DoLoadObjects('%WORKDIR%/Objects.js');
+	Navigator.QuitIfNotConnected = false;
+	Navigator.EnsureVisibleVerticalAlignment = "center";
+}
+
+function TestFinish()
+{
+	if(Tester.GetTestStatus() != Tester.Pass)
+	{
+		Navigator.DoScreenshot();
+	}
+
+	if (g_entryPointName == "Test")
+	{
+		Tester.Message("About to close Navigator...");
+		Navigator.Close();
+		Tester.Message("Navigator closed");
+		KillAllBrowsers();
+	}
+}
+
+function KillAllBrowsers()
+{
+	Global.DoMouseMove(0, 0);
+	Global.DoKillByName('iexplore.exe');
+	Global.DoKillByName('firefox.exe');
+	Global.DoKillByName('msedge.exe');
+	Global.DoKillByName('chrome.exe');
+	Global.DoKillByName('RapiseChromeProxy.exe');
 }
 
 function LogAssert(/**string*/ msg)
@@ -223,6 +252,33 @@ function DfoSearchRecords(/**string*/ value)
 	input.DoSetText(value);
 	button.DoClick();
 }
+
+/**
+ * Clicks new line button and waits for grid to get a new line.
+ * @param grid Id of a grid object
+ * @param button Id of a new line button
+ */
+function DfoGridAddNewRow(/**objectId*/ grid, /**objectId*/ button)
+{
+	var result = false;
+	var gridObj = SeS(grid);
+	var buttonObj = SeS(button);
+	var rowCount = gridObj.GetRowCount();
+	
+	buttonObj.DoClick();
+	for(var i = 0; i < 60; i++)
+	{
+		var newRowCount = gridObj.GetRowCount();
+		if (newRowCount > rowCount)
+		{
+			result = true;
+			break;
+		}
+		Global.DoSleep(1000);
+	}
+	Tester.Assert("New line added to " + grid, result);
+}
+
 
 /**
  * Writes key/value pair to Output.xlsx

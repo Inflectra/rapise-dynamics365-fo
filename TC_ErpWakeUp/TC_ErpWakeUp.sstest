@@ -3,13 +3,13 @@
   <ScriptPath>Main.js</ScriptPath>
   <UserFunctionsPath>..\User.js</UserFunctionsPath>
   <ObjectsPath>Objects.js</ObjectsPath>
-  <ReportPath>TC_NewPurchaseOrder.trp</ReportPath>
-  <CommandInterval>500</CommandInterval>
+  <ReportPath>TC_ErpWakeUp.trp</ReportPath>
+  <CommandInterval>1000</CommandInterval>
   <IterationsCount>1</IterationsCount>
-  <StopOnError>true</StopOnError>
+  <StopOnError>false</StopOnError>
   <CacheObjects>false</CacheObjects>
-  <ObjectLookupAttempts>60</ObjectLookupAttempts>
-  <ObjectLookupAttemptInterval>500</ObjectLookupAttemptInterval>
+  <ObjectLookupAttempts>30</ObjectLookupAttempts>
+  <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
   <ShowReport>true</ShowReport>
   <JSEngineType>Default</JSEngineType>
   <BeautifySavedObjects>true</BeautifySavedObjects>
@@ -61,9 +61,6 @@
       <TestFile>
         <Path>..\User.js</Path>
       </TestFile>
-      <TestFile>
-        <Path>..\WebAppProfile.json</Path>
-      </TestFile>
     </TestFiles>
   </TestFiles>
   <CustomStrings />
@@ -74,10 +71,13 @@
     <TestParam name="Record Title" variable="g_rWnd" defaultValue="regex:.*" description="Application Title to Record" output="false" ask="false">
       <PossibleValues />
     </TestParam>
-    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\TC_NewPurchaseOrder\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
+    <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\TC_ErpWakeUp\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
     <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="False" description="Enable web plugins auto detection" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
+    <TestParam name="Source Type" variable="g_serverRepositoryType" defaultValue="git" output="false" ask="false">
       <PossibleValues />
     </TestParam>
   </TestParams>

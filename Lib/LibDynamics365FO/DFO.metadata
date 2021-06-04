@@ -1,0 +1,104 @@
+{
+	"DFO": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "Launch",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "PassWelcomeScreen",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "SelectCompany",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ company",
+				"paramInfo": {}
+			},
+			{
+				"name": "SearchPage",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ page",
+				"paramInfo": {}
+			},
+			{
+				"name": "Wait",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "Menu",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ menu",
+				"paramInfo": {}
+			},
+			{
+				"name": "ClickButton",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ button",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetFieldText",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ field, /**string*/ text",
+				"paramInfo": {}
+			},
+			{
+				"name": "ExpandCombobox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ field",
+				"paramInfo": {}
+			},
+			{
+				"name": "ClickFormButton",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ button",
+				"paramInfo": {}
+			},
+			{
+				"name": "SearchRecords",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**string*/ value",
+				"paramInfo": {}
+			},
+			{
+				"name": "GridAddNewRow",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/**objectId*/ grid, /**objectId*/ button",
+				"paramInfo": {}
+			}
+		]
+	}
+}
